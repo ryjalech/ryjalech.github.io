@@ -1,3 +1,15 @@
+<!-- ***** SAVE AS TO index.html WHEN FINISED ***** 
+
+Section 1: About Me - Summary of experience, Skills, Statement of Purpose - ** revise summary & skills, add statement & testimonials, remove Clients
+
+Section 2: Resume - Professional Experience, Volunteer Work, Education - ** done, ready for line & proofing
+
+Section 3: Portfolio - links to published records - ** add XML & try rearranging for better visual balance
+
+Seciont 4: Editing Samples - mostly done; waiting for final XML & XSLT files
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +17,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+  <title>Ryan Lechner - Professional Portfolio</title>
 
   <!--
     - favicon
@@ -42,13 +54,13 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+          <img src="./assets/images/my-avatar.jpg" alt="Ryan's headshot" width="80">
         </figure>
 
         <div class="info-content">
           <h1 class="name" title="Ryan Lechner">Ryan Lechner</h1>
 
-          <p class="title">Technical Editor</p>
+          <p class="title">Editing, <br>Content Management <br>& Communications</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -74,7 +86,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
+              <a href="mailto:lechnerz@gmail.com" class="contact-link">lechnerz@gmail.com</a>
             </div>
 
           </li>
@@ -88,21 +100,7 @@
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">June 23, 1982</time>
+              <a href="tel:+15139269581" class="contact-link">+1 (513) 926-9581</a>
             </div>
 
           </li>
@@ -116,7 +114,7 @@
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Sacramento, California, USA</address>
+              <address>Seattle, Washington, USA</address>
             </div>
 
           </li>
@@ -128,20 +126,8 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
+            <a href="https://www.linkedin.com/in/ryan-lechner/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
@@ -180,14 +166,14 @@
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Portfolio</button>
           </li>
-
+		  		  
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+            <button class="navbar-link" data-nav-link>Editing Samples</button>
           </li>
 
-          <li class="navbar-item">
+          <!--<li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
+          </li>-->
 
         </ul>
 
@@ -209,17 +195,12 @@
 
         <section class="about-text">
           <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
+           I'm a professionally trained editor with diplomatic communications style and strong analytical eye. I have over twelve years of experience strategizing and developing internal communications, technical guides, newsletters, and web publications — with experience in training/instruction, project/program management, process development and continuous improvement, and team management. I love documenting complex processes and technical systems and  in easily digestible content with clarity, context, and rationale. 
+
           </p>
 
           <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
+            To me editing is like photo processing. I start with a plan to define the subject and approach, refine the framing and exposure, and then adjust the sliders until the piece best expresses its subject. Editing text has some different nuances, but the core mentality is the same: a document draft is like a raw image; I let that raw content tell me what it is and what it needs, and I work to bring that out.
           </p>
         </section>
 
@@ -230,22 +211,21 @@
 
         <section class="service">
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+          <h3 class="h3 service-title">What I offer</h3> <!-- UPDATE the descriptions -->
 
           <ul class="service-list">
 
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
+                <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
+                <h4 class="h4 service-item-title">Content development</h4>
 
                 <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
+                  Planning and strategizing content roadmaps.
                 </p>
               </div>
 
@@ -254,14 +234,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                <img src="./assets/images/icon-dev.svg" alt="coding icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
+                <h4 class="h4 service-item-title">Technical documentation</h4>
 
                 <p class="service-item-text">
-                  High-quality development of sites at the professional level.
+                  Translating technically complex into digestible formats.
                 </p>
               </div>
 
@@ -270,14 +250,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                <img src="./assets/images/icon-editing.svg" alt="editing icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
+                <h4 class="h4 service-item-title">Editing</h4>
 
                 <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
+                  Optimizing content for its intent.
                 </p>
               </div>
 
@@ -286,14 +266,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+                <img src="./assets/images/icon-communicator.svg" alt="communiation icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
+                <h4 class="h4 service-item-title">Communications</h4>
 
                 <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
+                  Communicating with tact, compassion, and diplomacy.
                 </p>
               </div>
 
@@ -305,7 +285,7 @@
 
 
         <!--
-          - testimonials
+          - testimonials ... ***Remove Clients, pull snippets from FORTE FEEDBACK for Testimonials
         -->
 
         <section class="testimonials">
@@ -450,66 +430,11 @@
           </section>
 
         </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
+		
+	</article>
 
       <!--
-        - #RESUME
+        - #RESUME ***MAKE THE DESCRIPTIONS MORE CONSISTENT GRAMMATICALLY, parallel strcuture ***
       -->
 
       <article class="resume" data-page="resume">
@@ -518,7 +443,137 @@
           <h2 class="h2 article-title">Resume</h2>
         </header>
 
+        <section class="skill">
+			<div class="title-wrapper">
+			  <div class="icon-box">
+			  <ion-icon name="medal-outline"></ion-icon>
+            </div>
+
+          <h3 class="h3 skills-title">My skills</h3>
+			</div>
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Content Strategy &amp; Development</h5>
+                <data>Product Documentation • Process Documentation • UI Content • User Guides • Communications • Document Management</data>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Editing &amp; Style</h5>
+                <data>Line &amp; Structural Editing • Style Guides • Proofreading • Technical Writing &amp; Editing • Indexing</data>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Technical Skills</h5>
+                <data>Markup (XML &amp; XSLT, HTML, CSS) • Microsoft Office Suite • Google Workspace • Adobe Acrobat • SQL, Excel &amp; Data Analysis</data>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
         <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="newspaper-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Chief Editor at Youth Alliance for Leadership and Development in Africa (YALDA)</h4>
+
+              <span>2021 — Present</span>
+
+              <p class="timeline-text">
+                I edit articles for the quarterly newsletter, checking rhetorical strength, journalistic structure, logic and line flow, and style consistency across articles of varying topics and tone. I created YALDA's in-house style guide.
+              </p>
+
+            </li>
+			
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Manager, Program Management at Amazon</h4>
+
+              <span>2020 — present</span>
+
+              <p class="timeline-text">
+                Defined scope of role supporting a newly formed escalations management team, and expanded that role into leading a team of Program Managers (PMs) and Data Analysts supporting an operational team of over 150: Developed team strategy, wrote charter and project roadmap templates; created case handling workflows and process documentation;, including user guides that standardized case categorization models; developed content strategy for onboarding new programs
+              </p>
+
+            </li>
+			
+			<li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Content Manager, Marketing Team, at DemocracyLab</h4>
+
+              <span>2021</span>
+
+              <p class="timeline-text">
+                I joined the volunteer marketing team to support the org’s mission and gain new skills: Collaborated with marketing team and leadership to plan content development and publication strategy for blog and newsletters.
+              </p>
+
+            </li>
+			
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Program Manager, Content Management, at Amazon</h4>
+			
+              <span>2018 — 2020</span>
+
+              <p class="timeline-text">
+                Scale up a newly launched risk analysis process: Documented complex technical systems (tools / workflow) and business policies for multinational operations team; created communications strategy for change management; established KPIs and reporting model, launched user forum to collect feedback and troubleshoot issues; analyzed metrics and anecdotes to improve policy documents and training material.
+              </p>
+
+            </li>
+			
+			 <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Process Developer at Amazon</h4>
+
+              <span>2014 — 2018</span>
+
+              <p class="timeline-text">
+               Documented pilot process conducting new account risk assessment for loan applications, drafted business proposal, and developed content for procedural and policy guidance; successfully scaled out the pilot into a full program and onboarded and trained the new operational team
+
+              </p>
+
+            </li>
+			
+			<li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Content Manager, Escalations, at Lionbridge</h4>
+
+              <span>2012 — 2014</span>
+
+              <p class="timeline-text">
+              Developed training content and operational guides, standardized escalations submission forms, and created case study reports for senior leadership
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+	
+		<section class="timeline">
 
           <div class="title-wrapper">
             <div class="icon-box">
@@ -532,41 +587,30 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
-
-              <span>2007 — 2008</span>
-
+              <h4 class="h4 timeline-item-title">Certificate in Editing</h4>
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                University of Washington – Seattle. WA
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
-
-              <span>2006 — 2007</span>
-
+              <h4 class="h4 timeline-item-title">Master of Arts in English Literature</h4>
               <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
+                Ball State University – Muncie, IN <br>
+				+ TA positions instructing Composition and Rhetoric Course and transcribing journals of Solita Solano
+
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
-
-              <span>2002 — 2004</span>
-
+              <h4 class="h4 timeline-item-title">Bachelor of Arts in English Literature</h4>
               <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
+				University of Dayton – Dayton, OH <br>
+				+ Part time structural editor of business research articles for scholarly publications
               </p>
 
             </li>
@@ -575,140 +619,31 @@
 
         </section>
 
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Creative director</h4>
-
-              <span>2015 — Present</span>
-
-              <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
 
       </article>
 
 
-
-
-
-      <!--
-        - #PORTFOLIO
+      <!--        - #PORTFOLIO 
+		Editing (check)
+			YALDA (all) = 3 (check)
+			DemocracyLab (check)
+				Globally Inclusive https://blog.democracylab.org/democracylab-globally-inclusive/
+				Diversity in Health Science https://blog.democracylab.org/supporting-diversity-in-the-health-sciences/
+				Growing with Data https://blog.democracylab.org/how-are-organizations-managing-data-transformations/
+		Content Development (check)
+			DemocracyLab (check)
+				No School Violence, interviewed project manager for source material, editied drafts https://blog.democracylab.org/building-the-database-to-end-school-violence/
+				Hack for the Future, drafted article and coordinated edits https://blog.democracylab.org/community-college-students-hack-for-the-future/
+				Optimizing Municipal Infrastructure https://blog.democracylab.org/optimizing-municipal-infrastructure-with-smart-city-planning/
+				Summer Create-a-thon, interviewed event participants, drafted article, and coordinated edits https://blog.democracylab.org/volunteers-make-the-2021-summer-create-a-thon-a-success/
+		Technical Writing (placeholder - update once completed)
+			XML personal project - create a webpage on Github for it once it's done, and include the raw XML and XSLT files in the editing samples
       -->
 
       <article class="portfolio" data-page="portfolio">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Portfolio</h2> 
         </header>
 
         <section class="projects">
@@ -720,15 +655,15 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn>Content Development</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Applications</button>
+              <button data-filter-btn>Technical Writing</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+              <button data-filter-btn>Editing</button>
             </li>
 
           </ul>
@@ -752,15 +687,15 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>Content Development</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Applications</button>
+                <button data-select-item>Technical Writing</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web development</button>
+                <button data-select-item>Editing</button>
               </li>
 
             </ul>
@@ -769,164 +704,200 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="editing">
+              <a href="https://heyzine.com/flip-book/a87fa565c4.html">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="open-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/YALDA-2021Q2.jpg" alt="yalda newsletter" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Finance</h3>
+                <h3 class="project-title">YALDA Q2 2021</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Editing</p>
+
+              </a>
+            </li>
+			
+			<li class="project-item  active" data-filter-item data-category="editing">
+              <a href="https://heyzine.com/flip-book/81b7a4a44f.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="open-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/YALDA-2021Q1.jpg" alt="yalda newsletter" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">YALDA Q1 2021</h3>
+
+                <p class="project-category">Editing</p>
+
+              </a>
+            </li>
+			
+			<li class="project-item  active" data-filter-item data-category="editing">
+              <a href="https://heyzine.com/flip-book/035b705f81.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="open-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/YALDA-2020Q4.jpg" alt="yalda newsletter" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">YALDA Q4 2020</h3>
+
+                <p class="project-category">Editing</p>
+
+              </a>
+            </li>
+			
+			<li class="project-item  active" data-filter-item data-category="editing">
+              <a href="https://blog.democracylab.org/democracylab-globally-inclusive/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="open-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/DLab-Globally.jpg" alt="Democracylab article" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DemocracyLab, "DemocracyLab: Globally Inclusive"</h3>
+
+                <p class="project-category">Editing</p>
+
+              </a>
+            </li>
+			
+			<li class="project-item  active" data-filter-item data-category="editing">
+              <a href="https://blog.democracylab.org/supporting-diversity-in-the-health-sciences/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="open-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/DLab-Supporting.jpg" alt="Democracylab article" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DemocracyLab, "Supporting Diversity in the Health Sciences"</h3>
+
+                <p class="project-category">Editing</p>
+
+              </a>
+            </li>
+			
+			<li class="project-item  active" data-filter-item data-category="editing">
+              <a href="https://blog.democracylab.org/how-are-organizations-managing-data-transformations/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="open-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/DLab-Growing.jpg" alt="Democracylab article" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DemocracyLab, "How Are Social &amp; Environmental Organizations Growing with Data?"</h3>
+
+                <p class="project-category">Editing</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="content development">
+              <a href="https://blog.democracylab.org/building-the-database-to-end-school-violence/">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="open-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/DLab-Building.jpg" alt="Democracylab article" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Orizon</h3>
+                <h3 class="project-title">DemocracyLab, "Building a Database to End School Violence" </h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Content development (interviewed project manager for source material, coordinated and editied drafts)</p>
+
+              </a>
+            </li>
+			
+			<li class="project-item  active" data-filter-item data-category="content development">
+              <a href="https://blog.democracylab.org/community-college-students-hack-for-the-future/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="open-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/DLab-Hack.jpg" alt="Democracylab article" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DemocracyLab, "WGU Helps Community College Students Hack for the Future"</h3>
+
+                <p class="project-category">Content development (drafted article and coordinated edits)</p>
+
+              </a>
+            </li>
+			
+			<li class="project-item  active" data-filter-item data-category="content development">
+              <a href="https://blog.democracylab.org/optimizing-municipal-infrastructure-with-smart-city-planning/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="open-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/DLab-Optimizing.jpg" alt="Democracylab article" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DemocracyLab, "Optimizing Municipal Infrastructure with Smart City Planning"</h3>
+
+                <p class="project-category">Content development (drafted article)</p>
+
+              </a>
+            </li>
+			
+			<li class="project-item  active" data-filter-item data-category="content development">
+              <a href="https://blog.democracylab.org/volunteers-make-the-2021-summer-create-a-thon-a-success/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="open-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/DLab-Summer.jpg" alt="democracylab sample" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DemocracyLab, "Volunteers make the 2021 Summer Create-a-thon a Success"</h3>
+
+                <p class="project-category">Content development (interviewed event participants, drafted article, and coordinated edits)</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="technical writing">
+              <a href="./Ionic6-Manual_v2.html" target="_blank">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="open-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                  <img src="./assets/images/ioniq_manual.jpg" alt="ioniq 6 manual" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Fundo</h3>
+                <h3 class="project-title">Ioniq6 manual</h3>
 
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
+                <p class="project-category">Technical writing (original content built in an XML file, transormed into HTML)</p>
 
               </a>
             </li>
@@ -938,44 +909,78 @@
       </article>
 
 
-
-
-
-      <!--
-        - #BLOG
+      <!--        - #BLOG
+		(check) YALDA intro: "Line edit: trimming and rephrasing / paraphrasing quotations. Some structural editing to smooth the general flow." (YALDA_intro.*)
+		(check) YALDA advocating: "Restructured as a sort of business proposal." (YALDA_advocating.*)
+		(check) YALDA exposition: "Restructured to focus the topics and create better narrative cohesion and flow" (YALDA_exposition.*)
+		(check) YALDA Covid: "Line edits for clarity and flow" (YALDA_covid.*)
+		(check) Project Style Sheet - YALDA: "Combining international styles from OED and United Nations, with publisher-specified requirements." (YALDA_style.*)
+		(check) DLab WGU hack: "drafted the article and coordinated with other volunteers for edits (shown in the comments)." (DLab_hack.*)
+		(check) DLab inclusivity: "Structural edits" (DLab_inclusivity.*)
+		(check) DLab spotlight: "I interviewed the project manager for source material and edited the first draft." (DLab_spotlight.*)
+		(check) DLab data "Line edits to condense the article for better focus and flow" (DLab_data.*)
+		XML raw file: "Raw XML file for the Ioniq6 manual" (ioniq_xml.*)
+		XSLT raw file: "Raw transformation file converting the Ioniq6 XML file into HTML file." (ioniq_xslt.*)
+		
       -->
 
-      <article class="blog" data-page="blog">
+      <article class="blog" data-page="editing samples">
 
         <header>
-          <h2 class="h2 article-title">Blog</h2>
+          <h2 class="h2 article-title">Editing Samples</h2>
         </header>
 
         <section class="blog-posts">
 
           <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
+		  
+		  	<li class="blog-post-item">
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                  <img src="./assets/images/ioniq_xml" alt="Design digest #79" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">XML</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                  <h3 class="h3 blog-item-title">[placeholder] XML raw file</h3>
 
                   <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                    Raw XML file I created for the Ioniq6 manual.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+			
+			<li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/ioniq_xslt.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">XSLT</p>
+
+                    <span class="dot"></span>
+
+                  </div>
+
+                  <h3 class="h3 blog-item-title">[placeholder] XSLT raw file</h3>
+
+                  <p class="blog-text">
+                    Raw transformation file converting the Ioniq6 XML file into HTML file.
                   </p>
 
                 </div>
@@ -984,26 +989,25 @@
             </li>
 
             <li class="blog-post-item">
-              <a href="#">
+              <a href="./assets/files/YALDA_exposition.pdf" target="_blank">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                  <img src="./assets/images/YALDA_exposition.jpg" alt="YALDA exposition" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">YALDA</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+                  <h3 class="h3 blog-item-title">Exposition on joint research paper</h3>
 
                   <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                    Restructured article to focus the topics and create better narrative cohesion and flow.
                   </p>
 
                 </div>
@@ -1012,26 +1016,25 @@
             </li>
 
             <li class="blog-post-item">
-              <a href="#">
+              <a href="./assets/files/YALDA_intro.pdf" target="_blank">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                  <img src="./assets/images/YALDA_intro.jpg" alt="YALDA newsletter introduction" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">YALDA</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+                  <h3 class="h3 blog-item-title">Newsletter introduction and summary</h3>
 
                   <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                    Line edits to trim and smoothen, paraphrasing article snippets, some structural editing to smooth the general flow.
                   </p>
 
                 </div>
@@ -1040,26 +1043,25 @@
             </li>
 
             <li class="blog-post-item">
-              <a href="#">
+              <a href="./assets/files/YALDA_advocating.pdf" target="_blank">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                  <img src="./assets/images/YALDA_advocating.jpg" alt="YALDA made in Africa" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">YALDA</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+                  <h3 class="h3 blog-item-title">Advocating for 'Made in Africa' label</h3>
 
                   <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                    Restructured to model article as a sort of business proposal
                   </p>
 
                 </div>
@@ -1068,26 +1070,25 @@
             </li>
 
             <li class="blog-post-item">
-              <a href="#">
+              <a href="./assets/files/YALDA_covid.pdf" target="_blank">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                  <img src="./assets/images/YALDA_covid.jpg" alt="YALDA covid impact" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">YALDA</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+                  <h3 class="h3 blog-item-title">Impact of COVID-19 in Africa</h3>
 
                   <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Line edits for clarity and flow.
                   </p>
 
                 </div>
@@ -1096,32 +1097,140 @@
             </li>
 
             <li class="blog-post-item">
-              <a href="#">
+              <a href="./assets/files/YALDA_style.pdf" target="_blank">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                  <img src="./assets/images/YALDA_style.jpg" alt="YALDA style sheet" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">YALDA</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+                  <h3 class="h3 blog-item-title">Project Style Sheet</h3>
 
                   <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                    Newsletter style sheet combining international styles from OED and United Nations, with publisher-specified requirements.
                   </p>
 
                 </div>
 
               </a>
             </li>
+
+            <li class="blog-post-item">
+              <a href="./assets/files/DLab_hack.pdf" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/DLab_hack.jpg" alt="democracylab hackathon" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">DemocracyLab</p>
+
+                    <span class="dot"></span>
+
+                  </div>
+
+                  <h3 class="h3 blog-item-title">WGU Hackathon</h3>
+
+                  <p class="blog-text">
+                    I drafted the article and coordinated with other volunteers on the edits (correspondence in the comments).
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+			
+			<li class="blog-post-item">
+              <a href="./assets/files/DLab_inclusivity.pdf" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/DLab_inclusivity.jpg" alt="democracylab inclusivity" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">DemocracyLab</p>
+
+                    <span class="dot"></span>
+
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Being Inclusive</h3>
+
+                  <p class="blog-text">
+                    Structural edits.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+			
+			<li class="blog-post-item">
+              <a href="./assets/files/DLab_spotlight.pdf" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/DLab_spotlight.jpg" alt="democracylab project spotlight" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">DemocracyLab</p>
+
+                    <span class="dot"></span>
+
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Project spotlight: No school violence</h3>
+
+                  <p class="blog-text">
+                    I interviewed the project manager for source material and edited the first draft.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+			
+			<li class="blog-post-item">
+              <a href="./assets/files/DLab_data" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/DLab_data.jpg" alt="democracylab data analytics" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">DemocracyLab</p>
+
+                    <span class="dot"></span>
+
+                  </div>
+
+                  <h3 class="h3 blog-item-title">How Data Analytics Continues to Transform Organizations</h3>
+
+                  <p class="blog-text">
+                    Line edits to condense the article for better focus and flow.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+			
 
           </ul>
 
@@ -1129,27 +1238,14 @@
 
       </article>
 
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
+      <!--        - #CONTACT
+      
 
       <article class="contact" data-page="contact">
 
         <header>
           <h2 class="h2 article-title">Contact</h2>
         </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
 
         <section class="contact-form">
 
@@ -1174,15 +1270,11 @@
 
         </section>
 
-      </article>
+      </article> -->
 
     </div>
 
   </main>
-
-
-
-
 
 
   <!--
