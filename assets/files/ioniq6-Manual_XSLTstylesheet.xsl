@@ -5,7 +5,11 @@
 <html>
 	<head> <title><xsl:value-of select="document/title" /></title> </head>
 
-<body style="font-family:Arial;font-size:10pt;line-height:1.5"> <!-- TRY ADDING a table of contents: 3 columns for the sections, and use a query to generate the list with links to each section-->
+<body style="font-family:Arial;font-size:10pt;line-height:1.5"> <!-- IMPROVEMENTS TO TRY 
+		ADDING a table of contents: 3 columns for the sections, and use a query to generate the list with links to each section
+		
+		DIFFERENT FONTS
+		-->
 
 	<h1><xsl:value-of select="document/title" /></h1>
 	<xsl:apply-templates select="document/introduction" />
@@ -35,15 +39,15 @@
 
 <!-- OLD STRUCTURE ... numbers are not generating properly on this, retain for reference, test new below -->
 <xsl:template match="orderedlist"> 
-	<xsl:apply-templates select="feature" />
+	<div> <xsl:apply-templates select="feature" /> </div>
 </xsl:template>
 
 <xsl:template match="feature">
-	<li> 
-		<div> <xsl:apply-templates select="para" /> 
+
+		<li  style="padding-top:1em"> <xsl:apply-templates select="para" /> 
 		<xsl:apply-templates select="emphasis" /> 
-		<xsl:apply-templates select="itemizedlist"/> </div>
-	</li>
+		<xsl:apply-templates select="itemizedlist"/> </li>
+
 </xsl:template>
 
 
@@ -73,10 +77,10 @@
 
 <xsl:template match="para"> <!-- controls needs a little spacing above line; redo the NOTE to be a new element -->
 	<xsl:choose>
-		<xsl:when test="@id='description'"> <span style="padding-left:30px"> <xsl:apply-templates /> </span> <!--slight indent, line break--> </xsl:when>
-		<xsl:when test="@id='controls'"> <span style="margin-left:50px;padding-top:1em;display:list-item;list-style-position:inside;list-style-type:disc"> <xsl:apply-templates /> </span> <!-- bullet, double indent --> </xsl:when>
-		<xsl:when test="@id='location'"> <span style="margin-left:50px;line-height:.5;border-width:1px;border-style:solid;border-color:#b4b7ae" > <xsl:apply-templates /> </span> <br /><br /> </xsl:when>
-		<xsl:when test="@id='note'"> <span style="margin-left:50px;border-width:2px;border-style:solid;border-color:cc0000">  <xsl:apply-templates /> </span> </xsl:when>
+		<xsl:when test="@id='description'"> <br /> <div style="padding-left:25px"> <xsl:apply-templates /> </div> <!--slight indent, line break--> </xsl:when>
+		<xsl:when test="@id='controls'"> <ul style="padding-top:5px"> <li style="display:list-item;list-style-position:inside;list-style-type:disc"> <xsl:apply-templates /> </li>  </ul> <!-- bullet, double indent --> </xsl:when>
+		<xsl:when test="@id='location'"> <div style="margin-left:40px;border-width:1px;border-style:solid;border-color:#b4b7ae" > <xsl:apply-templates /> </div> </xsl:when>
+		<xsl:when test="@id='note'"> <div style="margin-left:40px;border-width:2px;border-style:solid;border-color:#cc0000">  <xsl:apply-templates /> </div> </xsl:when>
 		<xsl:otherwise>	<xsl:apply-templates /> </xsl:otherwise>
 	</xsl:choose>
 </xsl:template>
@@ -90,3 +94,7 @@
 </xsl:template>
 
 </xsl:stylesheet> 
+
+<!-- 
+	*** find a way to keep the LOCATION and NOTE border to end with text; clean up comments; commit saves to right files
+ -->
