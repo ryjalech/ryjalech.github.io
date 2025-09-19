@@ -5,10 +5,10 @@
 <html>
 	<head> <title><xsl:value-of select="document/title" /></title> </head>
 
-<body style="font-family:Arial;font-size:10pt;line-height:1.5"> <!-- IMPROVEMENTS TO TRY 
-		ADDING a table of contents: 3 columns for the sections, and use a query to generate the list with links to each section
+<body style="font-family:Arial;font-size:10pt;line-height:1.5"> <!-- IMPROVEMENTS FOR V2
+		ADD a table of contents: 3 columns for the sections, and use a XML-query to generate the list with links to each section
 		
-		DIFFERENT FONTS
+		TRY different fonts
 		-->
 
 	<h1><xsl:value-of select="document/title" /></h1>
@@ -37,7 +37,6 @@
 	<h2> <xsl:value-of select="title" /> </h2>
 </xsl:template>
 
-<!-- OLD STRUCTURE ... numbers are not generating properly on this, retain for reference, test new below -->
 <xsl:template match="orderedlist"> 
 	<div> <xsl:apply-templates select="feature" /> </div>
 </xsl:template>
@@ -49,38 +48,17 @@
 		<xsl:apply-templates select="itemizedlist"/> </li>
 
 </xsl:template>
-
-
-<!-- NEW STRUCTURE, trying to solve for broken list numbers
-<xsl:template match="orderedlist"> 
-	<li> <xsl:for-each select="feature" >
-		<xsl:apply-templates select="para" /> 
-		<xsl:apply-templates select="emphasis" /> 
-		<xsl:apply-templates select="itemizedlist"/>
-	</xsl:for-each>
-	</li> 
-</xsl:template> 
--->
 	
 <xsl:template match="itemizedlist">
-	<!-- <xsl:apply-templates select="listitem" /> *** remove if new para code successful-->
-	<xsl:apply-templates select="para" /> <!-- if featureset style not coming out right: try to build the styling for the featureset here , maybe gives better control? -->
-</xsl:template>
-
-<!-- <xsl:template match="listitem"> (ORIGINAL NOTE: best way to target the ids? can a template match apply all attribute variations, or do they need to match precisely - or maybe different span somehow? - or try test logic description: more standard paragraph, slight indent ; controls: unordered list may be fine still? indent more from description ; location: maybe light border below the controls)
-	<li>
 	<xsl:apply-templates select="para" /> 
-	<xsl:apply-templates select="emphasis" /> 
-	</li>
 </xsl:template>
- -->
 
-<xsl:template match="para"> <!-- controls needs a little spacing above line; redo the NOTE to be a new element -->
+<xsl:template match="para">
 	<xsl:choose>
-		<xsl:when test="@id='description'"> <br /> <div style="padding-left:25px"> <xsl:apply-templates /> </div> <!--slight indent, line break--> </xsl:when>
-		<xsl:when test="@id='controls'"> <ul style="padding-top:5px"> <li style="display:list-item;list-style-position:inside;list-style-type:disc"> <xsl:apply-templates /> </li>  </ul> <!-- bullet, double indent --> </xsl:when>
-		<xsl:when test="@id='location'"> <div style="margin-left:40px;border-width:1px;border-style:solid;border-color:#b4b7ae" > <xsl:apply-templates /> </div> </xsl:when>
-		<xsl:when test="@id='note'"> <div style="margin-left:40px;border-width:2px;border-style:solid;border-color:#cc0000">  <xsl:apply-templates /> </div> </xsl:when>
+		<xsl:when test="@id='description'"> <br /> <div style="padding-left:25px"> <xsl:apply-templates /> </div> </xsl:when>
+		<xsl:when test="@id='controls'"> <ul style="padding-top:5px"> <li style="display:list-item;list-style-position:inside;list-style-type:disc"> <xsl:apply-templates /> </li>  </ul> </xsl:when>
+		<xsl:when test="@id='location'"> <div> <span style="margin-left:40px;border-width:1px;border-style:solid;border-color:#b4b7ae" > <xsl:apply-templates /> </span> </div> </xsl:when>
+		<xsl:when test="@id='note'"> <div> <span> style="margin-left:40px;border-width:2px;border-style:solid;border-color:#cc0000">  <xsl:apply-templates /> </span> </div> </xsl:when>
 		<xsl:otherwise>	<xsl:apply-templates /> </xsl:otherwise>
 	</xsl:choose>
 </xsl:template>
@@ -94,7 +72,3 @@
 </xsl:template>
 
 </xsl:stylesheet> 
-
-<!-- 
-	*** find a way to keep the LOCATION and NOTE border to end with text; clean up comments; commit saves to right files
- -->
