@@ -58,7 +58,7 @@
 		<xsl:when test="@id='description'"> <br /> <div style="padding-left:25px"> <xsl:apply-templates /> </div> </xsl:when>
 		<xsl:when test="@id='controls'"> <ul style="padding-top:5px"> <li style="display:list-item;list-style-position:inside;list-style-type:disc"> <xsl:apply-templates /> </li>  </ul> </xsl:when>
 		<xsl:when test="@id='location'"> <div> <span style="margin-left:40px;border-width:1px;border-style:solid;border-color:#b4b7ae" > <xsl:apply-templates /> </span> </div> </xsl:when>
-		<xsl:when test="@id='note'"> <div> <span> style="margin-left:40px;border-width:2px;border-style:solid;border-color:#cc0000">  <xsl:apply-templates /> </span> </div> </xsl:when>
+		<xsl:when test="@id='note'"> <div> <span style="margin-left:40px;border-width:2px;border-style:solid;border-color:#cc0000">  <xsl:apply-templates /> </span> </div> </xsl:when>
 		<xsl:otherwise>	<xsl:apply-templates /> </xsl:otherwise>
 	</xsl:choose>
 </xsl:template>
