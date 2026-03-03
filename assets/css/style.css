@@ -836,13 +836,16 @@ main {
 
 .skills-title { margin-bottom: 20px; }
 
-.skills-list { padding: 20px; }
+.skills-list { 
+  padding: 20px; 
+}
 
 
 .skills-item:not(:last-child) { margin-bottom: 15px; }
 
 .skill .title-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 4fr; 
   align-items: center;
   gap: 5px;
   margin-bottom: 8px;
